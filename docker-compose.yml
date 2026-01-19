@@ -1,0 +1,18 @@
+services:
+  frontend:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8412:80"
+      - "4905:443"
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    networks:
+      - app-network
+
+
+networks:
+  app-network:
+    driver: bridge
+
