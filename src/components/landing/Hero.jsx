@@ -126,7 +126,7 @@ const Hero = ({ startAnimation = false }) => {
                     <div className="overflow-hidden">
                         <motion.h1
                             variants={itemVariants}
-                            className="text-7xl md:text-9xl lg:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] mix-blend-difference"
+                            className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl xl:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] mix-blend-difference"
                         >
                             PACER
                         </motion.h1>
@@ -135,19 +135,19 @@ const Hero = ({ startAnimation = false }) => {
                     <div className="overflow-hidden">
                         <motion.h1
                             variants={itemVariants}
-                            className="text-7xl md:text-9xl lg:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-400 to-gray-600"
+                            className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl xl:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-400 to-gray-600"
                         >
                             Consultants
                         </motion.h1>
                     </div>
 
-                    <motion.div variants={itemVariants} className="mt-8 max-w-xl">
-                        <p className="text-lg md:text-xl text-background/70 font-light leading-relaxed">
+                    <motion.div variants={itemVariants} className="mt-6 sm:mt-8 max-w-xl">
+                        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-background/70 font-light leading-relaxed">
                             To offer our community a better habitat and serve by producing buildings that are practical, intelligent, and sustainable.
                         </p>
                     </motion.div>
 
-                    <motion.div variants={itemVariants} className="mt-10 flex flex-wrap gap-6">
+                    <motion.div variants={itemVariants} className="mt-8 sm:mt-10 flex flex-wrap gap-4 sm:gap-6">
                         <Button
                             size="xl"
                             className="h-16 px-10 text-lg rounded-none bg-primary text-primary-foreground hover:bg-primary/90 transition-all border border-transparent hover:border-primary/20"
@@ -171,9 +171,9 @@ const Hero = ({ startAnimation = false }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1 }}
-                className="absolute bottom-10 right-10 z-20 flex flex-col items-center gap-4"
+                className="absolute bottom-4 sm:bottom-8 md:bottom-10 right-4 sm:right-8 md:right-10 z-20 flex flex-col items-center gap-2 sm:gap-4 hidden sm:flex"
             >
-                <div className="flex flex-col gap-2 items-center mb-4">
+                <div className="flex flex-col gap-1 sm:gap-2 items-center mb-2 sm:mb-4">
                     {HERO_IMAGES.map((_, idx) => (
                         <motion.div
                             key={idx}
@@ -189,7 +189,7 @@ const Hero = ({ startAnimation = false }) => {
                 <span className="scrolldown-text font-mono text-xs tracking-widest uppercase rotate-90 origin-right translate-x-3 text-background/50">
                     Scroll Down
                 </span>
-                <div className="h-16 w-px bg-linear-to-b from-background/0 via-background/50 to-background/0 overflow-hidden relative">
+                <div className="h-12 sm:h-16 w-px bg-linear-to-b from-background/0 via-background/50 to-background/0 overflow-hidden relative">
                     <motion.div
                         animate={{ y: ["-100%", "100%"] }}
                         transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
