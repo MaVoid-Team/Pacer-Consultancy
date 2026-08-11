@@ -1,16 +1,53 @@
-# React + Vite
+# PACER Consultants (Interactive Experience)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Modern & Interactive Web Experience for PACER Consultants**  
+> Showcasing engineering solutions, methodology, projects, and clients with smooth animations and responsive design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Website
 
-## React Compiler
+- **Live URL:** [https://pacer-consultants-demo-85525634371.us-central1.run.app](https://pacer-consultants-demo-85525634371.us-central1.run.app)
+- **Hosted on:** Google Cloud Run (`us-central1`)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React 19, Vite (Rolldown)
+- **Styling:** Tailwind CSS v4, Framer Motion, Lenis (Smooth Scroll), OGL (WebGL)
+- **Web Server:** Nginx (Alpine)
+- **Deployment:** Google Cloud Run (Containerized Docker)
+
+---
+
+## 🛠️ Local Development
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Run dev server:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+4. **Preview production build:**
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## 🐳 Docker Deployment
+
+```bash
+docker build -t pacer-consultants-demo .
+docker run -p 8080:8080 pacer-consultants-demo
+```

@@ -1,5 +1,5 @@
 # Build stage
-FROM node:25-alpine as build
+FROM node:22-alpine AS build
 
 # Set working directory
 WORKDIR /app
@@ -33,5 +33,5 @@ RUN ls -la /usr/share/nginx/html
 RUN chown -R nginx:nginx /usr/share/nginx/html && \
     chmod -R 755 /usr/share/nginx/html
 
-EXPOSE 80
+EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
