@@ -1,53 +1,29 @@
-# PACER Consultants (Interactive Experience)
+# PACER Consultants
 
-> **Modern & Interactive Web Experience for PACER Consultants**  
-> Showcasing engineering solutions, methodology, projects, and clients with smooth animations and responsive design.
+An interactive marketing site for PACER Consultants — architecture, structural engineering, MEP, and project delivery since 1950.
 
----
+For developers, owners, and partners evaluating PACER’s multidisciplinary practice before a first conversation.
 
-## 🌐 Live Website
+## What you can do
 
-- **Live URL:** [https://pacer-consultants-demo-85525634371.us-central1.run.app](https://pacer-consultants-demo-85525634371.us-central1.run.app)
-- **Hosted on:** Google Cloud Run (`us-central1`)
+- Explore services across architecture, structural, MEP, project and construction management, and studies/planning
+- Browse selected works in a portfolio carousel
+- Read values and social proof from collaborators
+- Start a project inquiry from the contact form
+- Experience a smooth, motion-rich scroll site on desktop and mobile
 
----
+## Try it
 
-## 🚀 Tech Stack
+The live site: **[https://pacer-consultancy.vercel.app](https://pacer-consultancy.vercel.app)**
 
-- **Frontend:** React 19, Vite (Rolldown)
-- **Styling:** Tailwind CSS v4, Framer Motion, Lenis (Smooth Scroll), OGL (WebGL)
-- **Web Server:** Nginx (Alpine)
-- **Deployment:** Google Cloud Run (Containerized Docker)
+Demo (Cloud Run): [https://pacer-consultants-demo-85525634371.us-central1.run.app](https://pacer-consultants-demo-85525634371.us-central1.run.app)
 
----
+## How it works
 
-## 🛠️ Local Development
-
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-2. **Run dev server:**
-   ```bash
-   npm run dev
-   ```
-
-3. **Build for production:**
-   ```bash
-   npm run build
-   ```
-
-4. **Preview production build:**
-   ```bash
-   npm run preview
-   ```
+A React marketing front end with motion and smooth scrolling that presents services, portfolio, and contact. Stack and deploy notes stay out of this page.
 
 ---
 
-## 🐳 Docker Deployment
+Built by [Ziad Ahmed](https://github.com/Ziad-NasrEldin) at [MaVoid](https://mavoid.com).
 
-```bash
-docker build -t pacer-consultants-demo .
-docker run -p 8080:8080 pacer-consultants-demo
-```
+[Website](https://mavoid.com) · [LinkedIn](https://linkedin.com/in/ziad-ahmed-634202332) · [GitHub](https://github.com/Ziad-NasrEldin)
